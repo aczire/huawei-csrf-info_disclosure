@@ -1,4 +1,4 @@
-Huawei Datacard, CSRF Information Disclosure Vulnerability
+Huawei Datacard, CSRF Information Disclosure Vulnerability - CVE-2013-6031
 ===========================
 
           This module exploits an un-authenticated information disclosure vulnerability in Huawei
