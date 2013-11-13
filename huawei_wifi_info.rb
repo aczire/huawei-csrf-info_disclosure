@@ -136,7 +136,12 @@ def run
     if res.body.match(/<WifiWepKeyIndex>(.*)<\/WifiWepKeyIndex>/i)
       wifiWepKeyIndex = $1
       print_status("Wifi WEP Key Index: #{wifiWepKeyIndex}")
-    end
+    end	
+	
+   rescue::Exception => e
+	 print_status("Ooooops: #{e.class} #{e}")	
+   
+   #end run
   end
 
 def get_router_info
@@ -496,8 +501,6 @@ def get_router_dhcp_info
       print_status("DHCP Lease Time: #{dhcpLeaseTime}")
     end		
   end
- #rescue::Exception => e
-	#print_status("Ooooops: #{e.class} #{e}")
- #end  
+
 #end module  
 end
